@@ -18,7 +18,7 @@ public class TapeEquilibrium {
             temp += A[i];
             summ = summ - A[i];
             if (Math.abs(summ - temp) < result)
-                result = summ - temp;
+                result = Math.abs(summ - temp);
         }
 
         return result;
